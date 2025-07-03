@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message from Denchū-san</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap">
+    <link rel="icon" href="heart-png-29.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1{
+            font-family: 'Playfair Display', serif;
+        }
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background: #555;
+        }
+    </style>
+</head>
+
+<body class="main-body">
+    <section class="apology-card">
+        <div class="icon-container">
+            <svg class="icon-heart" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+        </div>
+        
+        <h1 class="apology-title">
+            A Sincere Apology
+        </h1>
+
+        <p class="apology-message">
+            My dearest friend,
+            <br><br>I am truly sorry for the pain I caused you.
+            <br>The silence between us has weighed heavily on my heart,
+            <br>and I deeply regret my actions and the words that hurt you.
+            <br>I value our friendship more than words can express, and I understand if it takes time for you to heal.
+            <br><br>I hope you can find it in your heart to forgive me.
+            <br>I miss you, and I miss our connection. 
+            <br><br> With deepest regret and hope for reconciliation,
+        </p>
+
+        <p class="apology-signature">
+            Your coconut head friend,<br>Yinx
+        </p>
+
+        <div class="button-container">
+            <a href="https://discord.com/users/934392596330070039" class="apology-button">
+                Let's talk sometime
+            </a>
+        </div>
+
+        <div class="additional-buttons-container">
+            <a href="feelings.html" class="apology-button-monochrome">
+                How I've Been...
+            </a>
+            <a href="#" class="apology-button-prank" onclick="activatePrank(event)">
+                DO NOT CLICK
+            </a>
+        </div>
+    </section>
+
+    <script>
+        function activatePrank(event){
+            event.preventDefault();
+
+            const card = document.querySelector('.apology-card');
+            if (card){
+                card.innerHTML = `
+                <h2 class="apology-title" style="color: red;">Expolosion Initiated!</h2>
+                <p class="apology-message">
+                    Your browser will expolde in 5 seconds...<br>
+                    (Modern browsers often prevent pages from closing themselves for security reasons)
+                    <br><br>
+                    Did it work?
+                    <br><br>
+                    I guess it didn't... sigh🤧
+                </p>
+                `;
+            }
+
+            setTimeout(() => {
+            window.close();
+        }, 5000);
+        }
+    </script>
+</body>
+</html>

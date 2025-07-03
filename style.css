@@ -1,0 +1,177 @@
+.main-body{
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+.apology-card{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width: 32rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    backdrop-filter: blur(4px);
+}
+
+@media (min-width: 768px) {
+    .apology-card {
+        padding: 3rem;
+    }
+}
+
+.icon-container{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-heart{
+    width: 64px;
+    height: 64px;
+    fill: red;
+    color: rgb(228, 0, 0);
+}
+
+.apology-title{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
+
+.apology-title-2{
+    text-align: left;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .apology-title, .apology-title-2 {
+        font-size: 2.25rem;
+    }
+}
+
+.tech-stuff{
+    text-align: left;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .tech-stuff {
+        font-size: 2rem;
+    }
+}
+
+.apology-message{
+    font-size: 16px;
+    color: #374151;
+    line-height: 1.625;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+    .apology-message, .tech-msg {
+        font-size: 1.125rem;
+    }
+}
+
+.tech-msg{
+    text-align: left;
+    font-size: 16px;
+    color: #374151;
+    line-height: 1.625;
+    margin-bottom: 32px;
+}
+
+.apology-signature{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 16px;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .apology-signature {
+        font-size: 1.25rem;
+    }
+}
+
+.button-container{
+    margin-top: 32px;
+}
+
+.apology-button{
+    display: inline-block;
+    background-color: skyblue;
+    color: white;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.apology-button:hover{
+    background-color: navy;
+    transform: scale(1.05);
+}
+
+.additional-buttons-container{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.apology-button-monochrome{
+    display: inline-block;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.apology-button-monochrome:hover{
+    background-color:white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.apology-button-prank{
+    display: inline-block;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.apology-button-prank:hover{
+    background-color: red;
+    transform: scale(1.05);
+}
